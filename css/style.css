@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #9e9e8f;
+    font-family:  'Open Sans';
+}
+
+header{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+h1{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+nav ul{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: rgba(249, 239, 227, 0.5);
+}
+nav a{
+    text-decoration: none;
+    padding: 17px 35px;
+    /* padding-right: 70px;
+    padding-top: 40px; */
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    transition: 0.6s ease-in-out;
+}
+nav a:hover{
+    background:  rgba(253, 239, 223, 0.6);
+}
+
+/* ////////////////////////////////////////////////////////// */
+.slider{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 650px;
+}
+
+.slider .rooms {
+overflow: hidden;
+}
+.slider .rooms img{
+    max-width: 120%;
+    min-width: 100%;
+}
+.slider .swiper-pagination-bullet-active{
+background: #ffe4c5;
+}
+.slider .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+}
+.slider{
+    position: relative;
+    margin-bottom: 100px;
+}
+.book a{
+color: #3f3f39;
+font-weight: bold;
+text-decoration: none;
+display: inline-block; 
+padding: 20px 50px;
+background-image:linear-gradient(to right, rgba(245, 246, 252, 0.55), rgb(253, 239, 223));
+border-radius: 100px; 
+}
+.book{
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 93.775px);
+    top: calc(50% - 29px); 
+}
+.book a:hover{
+    background-image:linear-gradient(to left, rgba(245, 246, 252, 0.55), rgb(253, 239, 223));
+}
+/* //////////////////////////////////////////////////////// */
+.rooms h2 a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgba(255,255,255,0.7);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 30px;
+    font-family: 'Conv_GildaDisplay-Regular';
+    font-weight: 100;
+    font-size: 62px;
+    transition: 0.3s;
+}
+.rooms h2:hover  a{
+color: rgba(249, 239, 227, 0.5);
+}
+ 
+.background{
+    background: rgba(0, 0, 0, 0.3);
+}
+.rooms{
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+.each{
+    width: 35%;
+    overflow: hidden;
+    margin-bottom: 50px;
+    height: 300px;
+    position: relative;
+}
+.each img{
+    max-width: 110%;
+    max-height: 110%;
+    transition: 0.3s ease-in-out;
+}
+.roomsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.each:hover img{
+filter: blur(3px);
+}
+
+.each span{
+    top: 65%;
+    opacity: 0;
+    color: #907e61;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+}
+.each h3 a{
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background:rgba(144, 126, 97, 0.7);
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    opacity: 0;
+}
+.each:hover h3 a{
+ animation: jump 1s forwards;
+}
+.each:hover span{
+    animation: toright 1.5s forwards;  
+    
+}
+@keyframes jump {
+    from {top: 0; left: 0; opacity: 0;}
+    to {top: 45%; left: calc(50% - 150px); opacity: 1;}
+}
+@keyframes toright{
+    from {left: 0; opacity: 0;}
+    to {left: 60%; opacity: 1;}
+}
+/* ////////////////////////////////////////////////////////////// */
+.background1{
+    background:#e8e7e7;
+
+}
+.services h2 a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #4a4a49;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 30px;
+    font-family: 'Conv_GildaDisplay-Regular';
+    font-weight: 100;
+    font-size: 62px;
+}
+.services .servicesContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.services figure{
+    font-family: 'Conv_GildaDisplay-Regular';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    width: 30%;
+}
+.services .icon{
+    /* overflow: hidden; */
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #8ba6b9;
+    border-radius: 50%;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+.services .icon img{
+    display: inline-block;
+    max-width:80%;
+    max-height: 90%; 
+}
+.services .icon img:first-child{
+transform: translateY(-10px);
+}
+.services h3{
+padding-top: 15px;
+}
+.services h3 a{
+text-decoration: none;
+color: rgb(63, 63, 57);
+text-transform: capitalize;
+font-size: 18px;
+}
+.services figure:hover{
+transform: scale(1.1);
+}
+/* ///////////////////////////////////////////////////////////////////// */
+.reviews h2{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #4a4a49;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding-top: 30px;
+    font-family: 'Conv_GildaDisplay-Regular';
+    font-weight: 100;
+    font-size: 62px;
+    
+}
+.reviews .s2 .swiper-slide p{
+    margin: 20px auto;
+    max-width: 700px;
+    height: 220px;
+    box-shadow: 0 0 7px 7px rgba(181, 203, 221, 0.45);  
+}
+.reviews .swiper-wrapper{
+    height: auto;
+}
+.reviews{
+    padding-bottom: 100px;
+    position: relative;
+max-width: 1200px;
+margin: 0 auto;
+}
+.reviews .next {
+	width: 20px;
+	height: 20px;
+	background: rgba(63, 63, 57, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5px;
+    /* top: 0; */
+    right: 0;
+	position: absolute;
+}
+.reviews .polygon{
+	clip-path: polygon(50% 33%, 0% 100%, 100% 100%);
+    background: #f9f9f9;
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+}
+
+.reviews .prev {
+	width: 20px;
+	height: 20px;
+	background: rgba(63, 63, 57, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 5px;
+	/* top: 0; */
+    left: 0;
+	position: absolute;
+}
+.reviews .swiper-button-prev::after{
+    content: "";
+}
+.reviews .swiper-button-next::after{
+    content: "";
+}
+.reviews .polygon1{
+    clip-path: polygon(50% 33%, 0% 100%, 100% 100%);
+    background: #f9f9f9;
+    width: 10px;
+    height: 10px;
+    transform: rotate(270deg);
+}
+.reviews  p{
+    font-family: 'Conv_Myriad Pro Italic';
+    color: #5d5d5c;
+    text-align: left;
+    text-indent: 30px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    word-spacing: 5px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.reviews span{
+    color: #8ba6b9;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 4px;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+footer{
+    background:  rgba(0, 0, 0, 0.6);  
+    padding-top: 50px;
+}
+.footerContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
+footer .imageCont{
+    transform: scale(0.7);
+}
+footer h3{
+    transform: scale(0.9);
+    font-family: 'Conv_GildaDisplay-Regular';
+    text-transform: capitalize;
+    font-size: 30px;
+    color:  #cfcfcf;
+}
+footer p{
+    font-family: 'Conv_GildaDisplay-Regular';
+    font-size: 16px;
+    color:  #cfcfcf;
+    /* padding-left: 20px; */
+}
+footer .location, .contacts{
+    display: flex;
+    justify-content: center;
+}
+footer .location p{
+padding-left: 10px;
+}
+footer span{
+    display: block;
+    padding-top:5px;
+}
+footer .address{
+    padding-left: 40px;
+}
+footer .contacts p{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+footer .contacts{
+    margin-left: -105px;;
+}
+footer .column1, .column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .column2{
+    height: 150px;
+}
+footer .column1{
+    width: 250px;
+    height: 250px;;
+
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+footer .soc{
+	height: 30px;
+	width: 30px;
+	fill: #2a2a2a;	
+	transition: 0.3s;
+	}
+	.soc:hover{
+		fill: #c19b76;
+	}
+/* ///////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 1200px) {
+    header  {
+        flex-wrap: wrap;
+      }
+      header nav{
+      width: 100%;
+      }
+      header h1{
+          width: 100%;
+          text-align: center;
+          padding: 0;
+      }
+
+    
+    .rooms h2 a, .reviews h2, .services h2 a{
+        font-size: 40px;
+    }
+    .services .icon{
+        /* overflow: hidden; */
+        height: 60px;
+        width: 60px;
+        padding-left: 20px;
+    }
+    .services .icon img{
+        max-width:60%;
+        max-height: 70%; 
+    }
+    .services .icon a{
+        display: inline-block;
+        transform: translateX(10px);
+        transform: translateY(5px);
+    }
+    .services figure h3 a{
+        font-size: small;
+    }
+    .reviews .next{
+        opacity: 0;
+    }
+    .reviews .prev{
+        opacity: 0;
+    }
+  
+  }
+
+  @media only screen and (max-width: 850px) {
+      header{
+          flex-wrap: wrap;
+      }
+      header ul{
+          flex-wrap: wrap;
+          width: 40%;
+          margin: 0 auto;
+      }
+      header ul li{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      header h1{
+          width: 100%;
+          text-align: center;
+          padding: 0;
+      }
+      .reviews  p{
+          font-size:small ;
+      }
+      .swiper-pagination-bullet{
+          opacity: 0;
+      }
+      header {
+          margin-bottom: 0;
+      }
+      .slider{
+          margin-bottom: 0;
+      }
+      footer h3{
+        transform: scale(0.7);
+      }
+      footer p{
+        font-size: 12px;
+    }
+    footer .contacts{
+        margin-left: -80px;
+    }
+    .reviews p span{
+        font-size: 15px;
+      }
+      .slider{
+          height: 450px;
+      }
+      .rooms h2 a{
+          margin-bottom: 40px;
+      }
+  }
+  @media only screen and (max-width: 750px){
+    .rooms h2 a, .reviews h2, .services h2 a{
+        font-size: 30px;
+    }
+    header ul{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .services  figure h3 a{
+        font-size: x-small;
+    }
+    .rooms .each{
+        width: 100%;
+        text-align: center;
+    }
+    .reviews p{
+        text-align: justify;
+        padding: 30px 20px;
+    }
+ .reviews{
+    padding-bottom: 10px;
+ }
+  }
+  @media only screen and (max-width: 550px){
+.footerContainer{
+    flex-wrap: wrap;
+    
+}
+nav a{
+    text-decoration: none;
+    padding: 8.5px 17.5px;
+    /* padding-right: 70px;
+    padding-top: 40px; */
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+}
+.slider{
+    height: 300px;
+}
+.rooms .each{
+    margin-bottom: 10px;
+
+}
+footer .column1, .column2{
+    width: 100%;
+}
+footer h3{
+    text-align: center;
+}
+footer .column2 h3{
+    padding-top: 30px;
+}
+  .reviews p{
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    word-spacing: 0%;;
+  }
+  .reviews p span{
+    font-size: 15px;
+  }
+  .reviews h2{
+    margin-bottom: 20px;
+
+  }
+  .services .servicesContainer{
+      padding-bottom: 20px;
+  }
+  .services h2 a {
+    margin-bottom: 20px;
+
+  }
+
+}
+@media only screen and (max-width: 370px){
+    .slider{
+        height: 250px;
+    }  
+    .rooms .each{
+    margin-bottom: 10px;
+
+}
+}
+
+
+
+
+
+
